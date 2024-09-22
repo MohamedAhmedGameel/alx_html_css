@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  line-height: 1.6;
+  color: #333;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 20px;
+  z-index: 10; /* Ensure the header appears above other content */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url("../assets/Object.png"); /* Replace with the actual URL of the hero image */
+  background-size: cover;
+  background-position: center;
+  height: 170vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.hero #heroIntro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero #heroProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-bottom: 50px;
+}
+
+.hero .profiles {
+  justify-content: space-evenly;
+  width: 70vw;
+}
+
+.hero h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.hero h2 {
+  font-weight: 200;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #c271ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.about-section {
+  background: #101c30;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+.about-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.profiles {
+  display: flex;
+  justify-content: center;
+}
+.profile {
+  margin: 0 15px;
+}
+.profile img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile p {
+  margin: 10px 0;
+}
+
+.qoute {
+  height: 40vh;
+  background-color: #c271ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.popular-tutorials {
+  padding: 40px;
+  background: white;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.popular-tutorials h2 {
+  font-weight: 200;
+}
+
+.tutorial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.tutorial-card {
+  background: #f7f7f7;
+  border-radius: 10px;
+  width: 250px;
+  position: relative;
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: block;
+}
+
+.tutorial-card::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  background-image: url("../assets/play.png");
+  z-index: 100;
+}
+
+.tutorial-card h4 {
+  padding: 0 10px;
+}
+
+.tutorial-card p {
+  font-size: small;
+  padding: 0 10px;
+}
+
+.tutorial-card .review {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.tutorial-card .review .reviewHead {
+  display: flex;
+}
+
+.tutorial-card .review span {
+  font-size: small;
+}
+
+.tutorial-card .review img {
+  width: 30px;
+}
+
+.tutorial-card .review .rate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.tutorial-card .review .rate img {
+  width: 100px;
+  height: 15px;
+}
+
+.tutorial-card .review .rate span {
+  color: #c271ff;
+  font-weight: 900;
+}
+
+.mentorShip {
+  background: #101c30;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+}
+
+.mentorShip h2 {
+  font-weight: 200;
+}
+
+.mentorShip h2 b {
+  color: #c271ff;
+}
+
+.mentorShip .mentors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.mentorShip .mentors div {
+  max-width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mentors img {
+  width: 40px;
+}
+
+.mentorShip .mentors h3 {
+  font-size: medium;
+}
+
+.mentorShip .mentors p {
+  font-size: small;
+  font-weight: 200;
+}
+
+.mentorShip button {
+  background-color: #c271ff;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+}
+
+.faq-section h2 {
+  font-weight: 200;
+  font-size: xx-large;
+}
+
+.faq-section {
+  padding: 80px 40px;
+  background: white;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.faq-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+.faq-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.faq-item p {
+  color: grey;
+  margin-top: 15px;
+}
+footer {
+  background: #101c30;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 30vh;
+  color: white;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+footer .footerUpper {
+  width: 100%;
+  height: 20vh;
+  padding: 20px 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footerUpper div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 35px;
+}
+
+footer .footerUpper div i {
+  width: 15px;
+}
+
+footer .footerLower {
+  color: gray;
+  display: flex;
+}
